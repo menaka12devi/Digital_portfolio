@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,53 +7,57 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f8f8f8;
             margin: 0;
             padding: 0;
+            background-color: #f8f9fa;
         }
-        header {
-            background-color: #c6ff00;
-            padding: 20px;
+        .header {
+            background-color: #c3ff00;
             text-align: center;
+            padding: 20px;
             font-size: 24px;
             font-weight: bold;
         }
-        nav {
-            background-color: #d32f2f;
-            padding: 10px;
+        .sub-header {
             text-align: center;
+            font-size: 18px;
         }
-        nav a {
+        .nav {
+            background-color: #d61a3c;
+            text-align: center;
+            padding: 10px;
+        }
+        .nav a {
             color: white;
             text-decoration: none;
             margin: 10px;
-            font-size: 18px;
+            font-weight: bold;
         }
         .container {
-            width: 80%;
-            margin: auto;
             padding: 20px;
-            background: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
+        }
+        .section {
+            background-color: white;
+            padding: 15px;
+            margin: 10px 0;
             border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
-        h2 {
-            color: #d32f2f;
-        }
-        .resume-btn {
+        .resume-button {
             text-align: center;
             margin-top: 20px;
         }
-        .resume-btn a {
-            background-color: #000;
+        .resume-button button {
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: black;
             color: white;
-            padding: 10px 20px;
-            text-decoration: none;
+            border: none;
             border-radius: 5px;
+            cursor: pointer;
         }
-        footer {
-            background-color: #333;
+        .footer {
+            background-color: #222;
             color: white;
             text-align: center;
             padding: 10px;
@@ -62,11 +67,56 @@
 </head>
 <body>
 
-<header>
-    Menaka Devi M<br>
-    <small>Student</small>
-</header>
+    <div class="header">Menaka Devi M</div>
+    <div class="sub-header">BSc Computer Science - Madras University</div>
 
-<nav>
-    <a href="#about">About</a>
-    <a href
+    <div class="nav">
+        <a href="#">About</a>
+        <a href="#">Education</a>
+        <a href="#">Skills</a>
+        <a href="#">Projects</a>
+        <a href="#">Resume</a>
+    </div>
+
+    <div class="container">
+
+        <div class="section">
+            <h2>About Me</h2>
+            <p>
+                I love working with different programming languages and solving real-world problems with technology.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <p>BSc Computer Science - Madras University</p>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>Java</li>
+                <li>Python</li>
+                <li>HTML</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Projects</h2>
+            <ul>
+                <li>Number Guessing Game Program</li>
+            </ul>
+        </div>
+
+        <div class="resume-button">
+            <button>Download CV</button>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        © 2024 Menaka Devi M
+    </div>
+
+</body>
+</html>
